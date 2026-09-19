@@ -103,3 +103,10 @@ git push -u origin main
 ## Notes
 
 There's no authentication — anyone who can reach the page can change anyone's status. That's deliberate for an internal team board, but add auth before putting it on the public internet.
+
+
+
+
+
+
+Live Link: https://team-availability-tracker-i45o.onrender.com
