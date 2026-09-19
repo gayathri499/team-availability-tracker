@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who's In — Team Availability</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="board">
+  <div class="board-head">
+    <div>
+      <h1>Who's in</h1>
+      <div class="sub"><span class="live-dot" id="live-dot" aria-hidden="true"></span> <span id="conn-label">Connecting&hellip;</span></div>
+    </div>
+    <div class="tally" id="tally" aria-live="polite"></div>
+  </div>
+
+  <div class="plate-frame">
+    <div id="rows">
+      <div class="empty-state">Loading the board&hellip;</div>
+    </div>
+    <form class="add-row" id="add-form">
+      <input type="text" name="name" placeholder="Teammate's name" required maxlength="80" autocomplete="off">
+      <input type="text" name="role" placeholder="Role (optional)" maxlength="80" autocomplete="off">
+      <button type="submit">Add teammate</button>
+    </form>
+  </div>
+
+  <p class="foot-note" id="foot-note">Status changes save to the server and push to every open board over WebSocket.</p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
